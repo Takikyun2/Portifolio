@@ -95,6 +95,10 @@ justify-content: center;
 /* navBar itens */
 
 
+.headerContainer{
+  box-shadow: #F1E7DD 0 0 5px;
+}
+
 /* Dark/white Mode toggles */
 
 body{
@@ -232,7 +236,7 @@ body.active{
 /* about me */
 
 .aboutMe{
-  padding-top: 20px;
+  padding-top: 70px;
 }
 
 
@@ -273,3 +277,4 @@ body.active{
 .tecnologias i{
   font-size: 1.5rem;
 }
+
