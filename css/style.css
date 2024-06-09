@@ -53,9 +53,9 @@ justify-content: center;
 
 .movePageBar{
   position: absolute;
-  top: 90%;
+  top: 95%;
   left: 50%;
-  transform: translateX(-50%) translateY(-90%);
+  transform: translateX(-50%) translateY(-95%);
   width:300px;
   height: 50px;
 }
@@ -68,7 +68,10 @@ justify-content: center;
   justify-content: center;
   align-items: center;
   gap: 20px;
-  background-color: #4B72A6;
+  background-color: #F1E7DD;
+  box-shadow: inset 0 2px 60px rgb(0, 0, 0, 0.1),
+              inset 0 2px 8px rgb(0, 0, 0, 0.1),
+              inset 0 -4px 4px rgb(0, 0, 0, 0.05);
   border-radius: 20px;
 }
 
@@ -86,7 +89,7 @@ justify-content: center;
 .item{
   cursor: pointer;
   font-weight: 500;
-  color: #D9C55F;
+  color: #222;
 }
 
 /* navBar itens */
@@ -222,5 +225,51 @@ body.active{
 .languageSelectContainer.active .setIndicatorLang{
   left: 60px;
 }
+.languageSelectContainer h4{
+  color: #444;
+}
+
+/* about me */
+
+.aboutMe{
+  padding-top: 20px;
+}
 
 
+.aboutMeContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 50px;
+  width: 50%;
+  background-color: #F1E7DD;
+  box-shadow: inset 0 2px 60px rgb(0, 0, 0, 0.1),
+              inset 0 2px 8px rgb(0, 0, 0, 0.1),
+              inset 0 -4px 4px rgb(0, 0, 0, 0.05);
+  border-radius: 20px;
+}
+
+.aboutMeText{
+  width: 70%;
+  font-size: 1.2rem;
+  text-align: justify;
+  color: #222;
+}
+
+.aboutMeTextTech{
+  width: 70%;
+  font-size: 1.2rem;
+  text-align: justify;
+  color: #222;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.tecnologias{
+  gap: 20px;
+}
+.tecnologias i{
+  font-size: 1.5rem;
+}
