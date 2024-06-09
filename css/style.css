@@ -1,0 +1,226 @@
+/* ? links */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* ! reset padrão */
+
+*{
+  font-family: "Poppins", sans-serif;;
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+/* ! presets */
+
+.displayFlex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ! presets */
+
+/* containers */
+
+.container{
+  width: 100%;
+}
+
+.headerContainer{
+  height: 90px;
+}
+
+/* wrapper */
+
+.navBar{
+  width: 90%;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.wrapper{
+  width: 90%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+/* movePageBar */
+
+.movePageBar{
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-90%);
+  width:300px;
+  height: 50px;
+}
+
+.moveBarContainer{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-color: #4B72A6;
+  border-radius: 20px;
+}
+
+.marker{
+  position: absolute;
+  left: 0;
+  height: 4px;
+  width: 0;
+  background-color: #D9C55F;
+  bottom: 8px;
+  transition: 0.5s ease-in-out;
+  border-radius: 4px;
+}
+
+.item{
+  cursor: pointer;
+  font-weight: 500;
+  color: #D9C55F;
+}
+
+/* navBar itens */
+
+
+/* Dark/white Mode toggles */
+
+body{
+  background-color: #F1E7DD;
+  transition: 0.5s ease-in-out;
+}
+
+body.active{
+  background-color: #242021;
+}
+
+.themeSelectContainer{
+  position: relative;
+  width: 80px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px;
+  background-color: #F1E7DD;
+  box-shadow: inset 0 2px 60px rgb(0, 0, 0, 0.1),
+              inset 0 2px 8px rgb(0, 0, 0, 0.1),
+              inset 0 -4px 4px rgb(0, 0, 0, 0.05);
+  border-radius: 20px;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.themeSelectContainer .setIndicator{
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transform: scale(0.9);
+  background: linear-gradient(to bottom, #eaeaea, #f9f9f9);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1),
+              inset 0 1px 1px rgba(255, 255, 255, 1),
+              inset 0 -1px 1px rgba(255, 255, 255, 1);
+  transition: 0.5s ease-in-out;
+  
+}
+
+.themeSelectContainer.active .setIndicator{
+  left: 40px;
+  background: linear-gradient(to bottom, #444, #222);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5),
+              inset 0 1px 1px rgba(255, 255, 255, 0.2),
+              inset 0 -1px 1px rgba(255, 255, 255, 0.2);
+}
+
+.themeSelectContainer.active {
+  background-color: #222;
+  box-shadow: inset 0 8px 60px rgb(0, 0, 0, 0.1),
+              inset 0 8px 8px rgb(0, 0, 0, 0.1),
+              inset 0 -4px 4px rgb(0, 0, 0, 0.1);
+}
+
+.moon{
+  transform: rotate(160deg) scale(0);
+  transition: .3s ease;
+  
+}
+.moon.active{
+  font-size: 1.5em;
+  color: #666;
+  filter: drop-shadow(0 0 2px rgba(0, 0, 0, .5));
+  transition-delay: .3s;
+  transform: rotate(0deg) scale(1);
+}
+
+.sun{
+  font-size: 1.5em;
+  color: #666;
+  transform: scale(1) rotate(0deg);
+  transform: translateX(-2px);
+  transition: .3s ease;
+  transition-delay: .3s;
+  filter: drop-shadow(0 0 2px rgba(0, 0, 0, .5));
+}
+
+.sun.active{
+  color: #222;
+  transform: scale(0.01) rotate(160deg);
+  transition: .5s ease;
+}
+
+/* Language change */
+
+.languageSelectContainer{
+  gap: 5px;
+  position: relative;
+  width: 120px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px;
+  background-color: #F1E7DD;
+  box-shadow: inset 0 2px 60px rgb(0, 0, 0, 0.1),
+              inset 0 2px 8px rgb(0, 0, 0, 0.1),
+              inset 0 -4px 4px rgb(0, 0, 0, 0.05);
+  border-radius: 20px;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.languageSelectContainer .setIndicatorLang{
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 40px;
+  border-radius: 20px;
+  transform: scale(0.9);
+  background: linear-gradient(to bottom, #eaeaea, #f9f9f9);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1),
+              inset 0 1px 1px rgba(255, 255, 255, 1),
+              inset 0 -1px 1px rgba(255, 255, 255, 1);
+  transition: 0.5s ease-in-out;
+}
+
+.languageSelectContainer.active .setIndicatorLang{
+  left: 60px;
+}
+
+
