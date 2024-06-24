@@ -283,7 +283,7 @@ body.darkMode {
 
 .aboutMeContainer {
   padding-top: 70px;
-  display: none;
+  display: flex;
 }
 
 
@@ -519,6 +519,7 @@ p {
 
 .contactContainer {
   margin-top: 300px;
+  display: none;
 }
 
 .contact {
