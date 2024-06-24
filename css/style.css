@@ -13,6 +13,7 @@
   text-decoration: none;
   font-weight: 400;
   scroll-behavior: smooth;
+  user-select: none;
 }
 
 /* ? start presets */
@@ -301,6 +302,7 @@ body.active {
 
 .projectsContainer {
   margin-top: 100px;
+  display: none;
 }
 
 /* div que leva todos os cards de projetos */
@@ -309,7 +311,7 @@ body.active {
   flex-direction: column;
   gap: 80px;
   padding: 50px;
-  width: 60%;
+  width: 50%;
   height: 500px;
   background-color: #F1E7DD;
   box-shadow: inset 0 2px 60px rgb(0, 0, 0, 0.1),
@@ -317,7 +319,7 @@ body.active {
     inset 0 -4px 4px rgb(0, 0, 0, 0.05);
   border-radius: 20px;
   overflow: scroll;
-  scroll-snap-type: x mandatory;
+  scroll-snap-type: y mandatory;
 }
 
 .projects::-webkit-scrollbar {
@@ -335,7 +337,7 @@ body.active {
   border-radius: 20px;
 }
 
-/* card do projeto */
+/* ? card do projeto */
 
 .projectCard {
   width: 90%;
@@ -346,6 +348,7 @@ body.active {
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1),
     inset 0 1px 1px rgba(255, 255, 255, 1),
     inset 0 -1px 1px rgba(255, 255, 255, 1);
+    gap: 0px;
 }
 
 /* segunda parte do card */
@@ -358,7 +361,7 @@ body.active {
 
 .projectsText {
   width: 90%;
-  height: 80%;
+  height: 100%;
   overflow: scroll;
   padding: 15px;
   text-align: justify;
@@ -397,3 +400,32 @@ body.active {
 }
 
 /* end projects */
+
+/* start Contact */
+
+.contactContainer{
+  margin-top: 300px;
+}
+
+.contact{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 50px;
+  width: 30%;
+  background-color: #F1E7DD;
+  box-shadow: inset 0 2px 60px rgb(0, 0, 0, 0.1),
+    inset 0 2px 8px rgb(0, 0, 0, 0.1),
+    inset 0 -4px 4px rgb(0, 0, 0, 0.05);
+  border-radius: 20px;
+}
+
+.contactSocialMedias{
+  gap: 50px;
+}
+
+.contactSocialMedias i{
+  font-size: 2.5rem;
+}

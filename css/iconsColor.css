@@ -1,4 +1,4 @@
-/* color i */
+/* cor dos icones de tecnologias */
 
 .html {
   color: #ff6200;
@@ -34,4 +34,22 @@
 
 .sql {
   color: #5cbeff;
+}
+
+/* cor dos icones de redes sociais */
+
+.instagram{
+  color: #222;
+}
+
+.discord{
+  color: #7289da;
+}
+
+.linkedin{
+  color: #0e76a8;
+}
+
+.email{
+  color: #f2a60c;
 }
