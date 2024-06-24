@@ -76,6 +76,18 @@
     inset 0 2px 8px rgb(0, 0, 0, 0.1),
     inset 0 -4px 4px rgb(0, 0, 0, 0.05);
   border-radius: 20px;
+  transition: .5s ease-in-out;
+}
+
+.moveBarContainer.darkMode {
+  background-color: #222;
+  box-shadow: inset 0 8px 60px rgb(0, 0, 0, 0.1),
+    inset 0 8px 8px rgb(0, 0, 0, 0.1),
+    inset 0 -4px 4px rgb(0, 0, 0, 0.1);
+}
+
+.moveBarContainer.darkMode h4 {
+  color: #c0c0c0 !important;
 }
 
 .marker {
@@ -100,6 +112,11 @@
 
 .headerContainer {
   box-shadow: #c0c0c0 0 0 5px;
+  transition: 0.5s ease-in-out;
+}
+
+.headerContainer.darkMode {
+  box-shadow: #3f3f3f 0 0 5px;
 }
 
 /* ! start Dark/white Mode toggles */
@@ -109,7 +126,7 @@ body {
   transition: 0.5s ease-in-out;
 }
 
-body.active {
+body.darkMode {
   background-color: #242021;
 }
 
@@ -148,7 +165,7 @@ body.active {
 
 }
 
-.themeSelectContainer.active .setIndicator {
+.themeSelectContainer.darkMode .setIndicator {
   left: 40px;
   background: linear-gradient(to bottom, #444, #222);
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5),
@@ -156,7 +173,7 @@ body.active {
     inset 0 -1px 1px rgba(255, 255, 255, 0.2);
 }
 
-.themeSelectContainer.active {
+.themeSelectContainer.darkMode {
   background-color: #222;
   box-shadow: inset 0 8px 60px rgb(0, 0, 0, 0.1),
     inset 0 8px 8px rgb(0, 0, 0, 0.1),
@@ -169,7 +186,7 @@ body.active {
 
 }
 
-.moon.active {
+.moon.darkMode {
   font-size: 1.5em;
   color: #666;
   filter: drop-shadow(0 0 2px rgba(0, 0, 0, .5));
@@ -187,7 +204,7 @@ body.active {
   filter: drop-shadow(0 0 2px rgba(0, 0, 0, .5));
 }
 
-.sun.active {
+.sun.darkMode {
   color: #222;
   transform: scale(0.01) rotate(160deg);
   transition: .5s ease;
@@ -216,6 +233,17 @@ body.active {
   cursor: pointer;
 }
 
+.languageSelectContainer.darkMode {
+  background-color: #222;
+  box-shadow: inset 0 8px 60px rgb(0, 0, 0, 0.1),
+    inset 0 8px 8px rgb(0, 0, 0, 0.1),
+    inset 0 -4px 4px rgb(0, 0, 0, 0.1);
+}
+
+.languageSelectContainer.darkMode h4 {
+  color: #c0c0c0;
+}
+
 .languageSelectContainer .setIndicatorLang {
   position: absolute;
   display: block;
@@ -230,6 +258,13 @@ body.active {
     inset 0 1px 1px rgba(255, 255, 255, 1),
     inset 0 -1px 1px rgba(255, 255, 255, 1);
   transition: 0.5s ease-in-out;
+}
+
+.languageSelectContainer.darkMode .setIndicatorLang {
+  background: linear-gradient(to bottom, #444, #222);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5),
+    inset 0 1px 1px rgba(255, 255, 255, 0.2),
+    inset 0 -1px 1px rgba(255, 255, 255, 0.2);
 }
 
 .languageSelectContainer.active .setIndicatorLang {
@@ -259,12 +294,25 @@ body.active {
   flex-direction: column;
   gap: 20px;
   padding: 50px;
-  width: 50%;
+  width: 60%;
   background-color: #F1E7DD;
   box-shadow: inset 0 2px 60px rgb(0, 0, 0, 0.1),
     inset 0 2px 8px rgb(0, 0, 0, 0.1),
     inset 0 -4px 4px rgb(0, 0, 0, 0.05);
   border-radius: 20px;
+  transition: 0.5s ease-in-out;
+}
+
+.aboutMe.darkMode {
+  background-color: #222;
+  box-shadow: inset 0 8px 60px rgb(0, 0, 0, 0.1),
+    inset 0 8px 8px rgb(0, 0, 0, 0.1),
+    inset 0 -4px 4px rgb(0, 0, 0, 0.1);
+}
+
+.aboutMe.darkMode h3,
+p {
+  color: #c0c0c0;
 }
 
 .aboutMeText {
@@ -275,8 +323,13 @@ body.active {
 }
 
 .aboutMeTitle {
+  color: #222;
   text-align: center;
   padding-bottom: 20px;
+}
+
+.aboutMeTitle.darkMode {
+  color: #c0c0c0;
 }
 
 .aboutMeTextTech {
@@ -311,7 +364,7 @@ body.active {
   flex-direction: column;
   gap: 80px;
   padding: 50px;
-  width: 50%;
+  width: 60%;
   height: 500px;
   background-color: #F1E7DD;
   box-shadow: inset 0 2px 60px rgb(0, 0, 0, 0.1),
@@ -320,6 +373,14 @@ body.active {
   border-radius: 20px;
   overflow: scroll;
   scroll-snap-type: y mandatory;
+  transition: 0.5s ease-in-out;
+}
+
+.projects.darkMode {
+  background-color: #222;
+  box-shadow: inset 0 8px 60px rgb(0, 0, 0, 0.1),
+    inset 0 8px 8px rgb(0, 0, 0, 0.1),
+    inset 0 -4px 4px rgb(0, 0, 0, 0.1);
 }
 
 .projects::-webkit-scrollbar {
@@ -330,11 +391,21 @@ body.active {
 
 .projects::-webkit-scrollbar-track {
   color: #222;
+  transition: 0.5s ease-in-out;
+}
+
+.projects.darkMode::-webkit-scrollbar-track {
+  color: #c0c0c0;
 }
 
 .projects::-webkit-scrollbar-thumb {
   background-color: #222;
   border-radius: 20px;
+  transition: 0.5s ease-in-out;
+}
+
+.projects.darkMode::-webkit-scrollbar-thumb {
+  background-color: #c0c0c0;
 }
 
 /* ? card do projeto */
@@ -344,11 +415,19 @@ body.active {
   height: 100%;
   flex-direction: column;
   border-radius: 10px;
-  background: linear-gradient(to bottom, #eaeaea, #f9f9f9);
+  background: #eaeaea;
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1),
     inset 0 1px 1px rgba(255, 255, 255, 1),
     inset 0 -1px 1px rgba(255, 255, 255, 1);
-    gap: 0px;
+  gap: 0px;
+  transition: 0.5s ease-in-out;
+}
+
+.projectCard.darkMode {
+  background-color: #222;
+  box-shadow: inset 0 2px 3px rgb(0, 0, 0, 0.1),
+    inset 0 1px 1px rgb(0, 0, 0, 0.1),
+    inset 0 -1px 1px rgb(0, 0, 0, 0.1);
 }
 
 /* segunda parte do card */
@@ -359,6 +438,15 @@ body.active {
   text-align: justify;
 }
 
+.projectTittle h1 {
+  color: #222;
+  transition: 0.5s ease-in-out;
+}
+
+.projectTittle.darkMode h1 {
+  color: #c0c0c0;
+}
+
 .projectsText {
   width: 90%;
   height: 100%;
@@ -366,19 +454,35 @@ body.active {
   padding: 15px;
   text-align: justify;
   color: #222;
+  transition: 0.5s ease-in-out;
+}
+
+.projectsText.darkMode {
+  color: #c0c0c0;
 }
 
 .projectsText::-webkit-scrollbar {
   width: 5px;
+  height: 0px;
 }
 
 .projectsText::-webkit-scrollbar-track {
   color: #222;
+  transition: 0.5s ease-in-out;
+}
+
+.projectsText.darkMode::-webkit-scrollbar-track {
+  color: #c0c0c0;
 }
 
 .projectsText::-webkit-scrollbar-thumb {
   background-color: #222;
   border-radius: 20px;
+  transition: 0.5s ease-in-out;
+}
+
+.projectsText.darkMode::-webkit-scrollbar-thumb {
+  background-color: #c0c0c0;
 }
 
 .githubLink i {
@@ -386,6 +490,11 @@ body.active {
   font-size: 2.8rem;
   transition: .25s all;
   color: #fff;
+  transition: 0.5s ease-in-out;
+}
+
+.githubLink.darkMode i {
+  color: #222;
 }
 
 .githubLink i:hover {
@@ -397,17 +506,22 @@ body.active {
   height: 80%;
   border-radius: 20px;
   background-color: #222;
+  transition: 0.5s ease-in-out;
+}
+
+.githubLink.darkMode {
+  background-color: #c0c0c0;
 }
 
 /* end projects */
 
 /* start Contact */
 
-.contactContainer{
+.contactContainer {
   margin-top: 300px;
 }
 
-.contact{
+.contact {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -420,12 +534,20 @@ body.active {
     inset 0 2px 8px rgb(0, 0, 0, 0.1),
     inset 0 -4px 4px rgb(0, 0, 0, 0.05);
   border-radius: 20px;
+  transition: 0.5s ease-in-out;
 }
 
-.contactSocialMedias{
+.contact.darkMode {
+  background-color: #222;
+  box-shadow: inset 0 8px 60px rgb(0, 0, 0, 0.1),
+    inset 0 8px 8px rgb(0, 0, 0, 0.1),
+    inset 0 -4px 4px rgb(0, 0, 0, 0.1);
+}
+
+.contactSocialMedias {
   gap: 50px;
 }
 
-.contactSocialMedias i{
+.contactSocialMedias i {
   font-size: 2.5rem;
 }

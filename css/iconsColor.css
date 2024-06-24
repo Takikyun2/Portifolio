@@ -12,6 +12,10 @@
   color: #000000;
 }
 
+.javascript.darkMode {
+  color: #c0c0c0;
+}
+
 .react {
   color: #58c4dc;
 }
@@ -32,18 +36,36 @@
   color: #000;
 }
 
+.github.darkMode {
+  color: #c0c0c0;
+}
+
 .sql {
   color: #5cbeff;
 }
 
 /* cor dos icones de redes sociais */
 
+
+
 .instagram{
   color: #222;
 }
 
+.instagram.darkMode{
+  color: #c0c0c0;
+}
+
 .discord{
   color: #7289da;
+}
+
+.githubContact{
+  color: #222;
+}
+
+.githubContact.darkMode{
+  color: #c0c0c0;
 }
 
 .linkedin{
