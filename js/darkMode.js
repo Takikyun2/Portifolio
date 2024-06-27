@@ -1,88 +1,33 @@
-/* seletor de tema */
+/* constantes */
 
+const elements = document.querySelectorAll('body, .moon, .sun, .headerContainer, .languageSelectContainer, .moveBarContainer, .aboutMe, .aboutMeTitle, .javascript, .github, .projects, .contact, .instagram, .githubContact');
+
+/* seletor de temas */
 const toggle = document.querySelector('.themeSelectContainer');
-const moon = document.querySelector('.moon');
-const sun = document.querySelector('.sun');
-const body = document.querySelector('body');
-const headerContainer = document.querySelector('.headerContainer');
 
-/* move bar */
 
-const moveBarContainer = document.querySelector('.moveBarContainer');
+/* constantes da parte projects */
 
-/* seletor de linguagem */
+const projectCards = document.querySelectorAll('.projectCard');
+const projectTexts = document.querySelectorAll('.projectsText');
+const githubLinks = document.querySelectorAll('.githubLink');
+const projectTitles = document.querySelectorAll('.projectTittle');
 
-const languageSelectContainer = document.querySelector('.languageSelectContainer');
-
-/* about me */
-
-const aboutMe = document.querySelector('.aboutMe');
-const aboutMeTitle = document.querySelector('.aboutMeTitle');
-const javascript = document.querySelector('.javascript');
-const github = document.querySelector('.github');
-
-/* projects */
-
-const projects = document.querySelector('.projects');
-const projectCard = document.querySelectorAll('.projectCard');
-const projectsText = document.querySelectorAll('.projectsText');
-const githubLink = document.querySelectorAll('.githubLink');
-const projectTittle = document.querySelectorAll('.projectTittle');
-
-/* contact */
-
-const contact = document.querySelector('.contact');
-const instagram = document.querySelector('.instagram');
-const githubContact = document.querySelector('.githubContact');
+/* função que aplica o dark mode */
 
 toggle.onclick = function () {
-
-  /* seletor de tema */
+  elements.forEach(element => element.classList.toggle('darkMode'));
 
   toggle.classList.toggle('darkMode');
-  body.classList.toggle('darkMode');
-  moon.classList.toggle('darkMode');
-  sun.classList.toggle('darkMode');
-  headerContainer.classList.toggle('darkMode');
 
-  /* seletor de linguagem */
+  projectCards.forEach(card => card.classList.toggle('darkMode'));
+  projectTexts.forEach(text => text.classList.toggle('darkMode'));
+  githubLinks.forEach(link => link.classList.toggle('darkMode'));
+  projectTitles.forEach(title => title.classList.toggle('darkMode'));
+};
 
-  languageSelectContainer.classList.toggle('darkMode');
 
-  /* move bar */
 
-  moveBarContainer.classList.toggle('darkMode');
 
-  /* about me */
 
-  aboutMe.classList.toggle('darkMode');
-  aboutMeTitle.classList.toggle('darkMode');
-  javascript.classList.toggle('darkMode');
-  github.classList.toggle('darkMode');
 
-  /* projects */
-
-  projects.classList.toggle('darkMode');
-
-  projectCard.forEach(card => {
-    card.classList.toggle('darkMode');
-  });
-
-  projectsText.forEach(text => {
-    text.classList.toggle('darkMode');
-  });
-
-  githubLink.forEach(link => {
-    link.classList.toggle('darkMode');
-  });
-
-  projectTittle.forEach(title => {
-    title.classList.toggle('darkMode');
-  });
-
-  /* contact */
-
-  contact.classList.toggle('darkMode');
-  instagram.classList.toggle('darkMode');
-  githubContact.classList.toggle('darkMode');
-}
