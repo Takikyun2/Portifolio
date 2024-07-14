@@ -34,6 +34,7 @@
 
 .headerContainer {
   height: 90px;
+  overflow: hidden;
 }
 
 /* wrapper */
@@ -61,6 +62,8 @@
   transform: translateX(-50%) translateY(-95%);
   width: 300px;
   height: 50px;
+  animation: fade-in 1.5s;
+  animation-timing-function: ease-in-out;
 }
 
 .moveBarContainer {
@@ -102,6 +105,8 @@
 .headerContainer {
   box-shadow: #c0c0c0 0 0 5px;
   transition: 0.5s ease-in-out;
+  animation: fade-in 1s;
+  animation-timing-function: ease-in-out;
 }
 
 /* ! start Dark/white Mode toggles */
@@ -127,6 +132,8 @@ body {
   border-radius: 20px;
   transition: 0.5s ease-in-out;
   cursor: pointer;
+  animation: slide-reverse 1.5s;
+  animation-timing-function: ease-in-out;
 }
 
 .themeSelectContainer .setIndicator {
@@ -183,6 +190,8 @@ body {
   border-radius: 20px;
   transition: 0.5s ease-in-out;
   cursor: pointer;
+  animation: slide 1.5s;
+  animation-timing-function: ease-in-out;
 }
 
 .languageSelectContainer .setIndicatorLang {
@@ -235,6 +244,9 @@ body {
     inset 0 -4px 4px rgb(0, 0, 0, 0.05);
   border-radius: 20px;
   transition: 0.5s ease-in-out;
+  animation: scale .5s;
+  animation-timing-function: ease-in-out;
+  overflow: hidden;
 }
 
 .aboutMeText {
@@ -242,12 +254,16 @@ body {
   font-size: 1.2rem;
   text-align: justify;
   color: #222;
+  animation: slide-reverse 1.5s;
+  animation-timing-function: ease-in-out;
 }
 
 .aboutMeTitle {
   color: #222;
   text-align: center;
   padding-bottom: 20px;
+  animation: slide-reverse 1.5s;
+  animation-timing-function: ease-in-out;
 }
 
 .aboutMeTextTech {
@@ -257,6 +273,8 @@ body {
   color: #222;
   flex-direction: column;
   gap: 10px;
+  animation: slide 1.5s;
+  animation-timing-function: ease-in-out;
 }
 
 .tecnologias {
@@ -292,6 +310,8 @@ body {
   overflow: scroll;
   scroll-snap-type: y mandatory;
   transition: 0.5s ease-in-out;
+  animation: scale-reverse .5s;
+  animation-timing-function: ease-in-out;
 }
 
 .projects::-webkit-scrollbar {
@@ -324,6 +344,8 @@ body {
     inset 0 -1px 1px rgba(255, 255, 255, 1);
   gap: 0px;
   transition: 0.5s ease-in-out;
+  animation: slide 1s;
+  animation-timing-function: ease-in-out;
 }
 
 /* segunda parte do card */
@@ -383,8 +405,13 @@ body {
   border-radius: 20px;
   background-color: #222;
   transition: 0.5s ease-in-out;
+  animation: scale 1s;
+  animation-timing-function: ease-in-out;
 }
 
+.first-card {
+  margin-top:950px;
+}
 /* end projects */
 
 /* start Contact */
@@ -392,6 +419,7 @@ body {
 .contactContainer {
   margin-top: 250px;
   display: none;
+  overflow: hidden;
 }
 
 .contact {
@@ -401,30 +429,48 @@ body {
   flex-direction: column;
   gap: 20px;
   padding: 50px;
-  width: 30%;
-  height: 250px;
+  width: 100%;
+  height: 300px;
   background-color: #F1E7DD;
   box-shadow: inset 0 2px 60px rgb(0, 0, 0, 0.1),
     inset 0 2px 8px rgb(0, 0, 0, 0.1),
     inset 0 -4px 4px rgb(0, 0, 0, 0.05);
   border-radius: 20px;
   transition: 0.5s ease-in-out;
+  animation: scale .5s;
+  animation-timing-function: ease-in-out;
 }
 
 .contactSocialMedias {
   gap: 10px;
+  animation: slide-reverse 1.5s;
+  animation-timing-function: ease-in-out;
 }
 
 @keyframes shake {
-  0% { transform: translate(0, 0) rotate(0deg); }
-  25% { transform: translate(3px, 3px) rotate(5deg); }
-  50% { transform: translate(0, 0) rotate(0eg); }
-  75% { transform: translate(-3px, 3px) rotate(-3deg); }
-  100% { transform: translate(0, 0) rotate(0deg); }
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+
+  25% {
+    transform: translate(3px, 3px) rotate(5deg);
+  }
+
+  50% {
+    transform: translate(0, 0) rotate(0eg);
+  }
+
+  75% {
+    transform: translate(-3px, 3px) rotate(-3deg);
+  }
+
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
 }
 
 .contactSocialMedias i {
-  font-size: 3rem;
+  font-size: 5rem;
   padding: 20px;
   transition: .5s all;
 }
@@ -437,10 +483,10 @@ body {
 
 /* eng */
 
-.eng{
+.eng {
   display: none;
 }
 
-.pt{
+.pt {
   display: block;
 }

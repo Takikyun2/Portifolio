@@ -1,0 +1,833 @@
+/* !1700px */
+@media (max-width: 1700px) {
+  .headerContainer {
+    height: 90px;
+  }
+
+  /* aboutme */
+
+  .aboutMe {
+    gap: 20px;
+    padding: 50px;
+    width: 50%;
+    height: 70vh;
+  }
+
+  .aboutMeText {
+    width: 70%;
+    font-size: 1.2rem;
+  }
+
+  .aboutMeTitle {
+    padding-bottom: 20px;
+  }
+
+  .aboutMeTextTech {
+    width: 70%;
+    font-size: 1.2rem;
+    gap: 10px;
+  }
+
+  .tecnologias {
+    gap: 20px;
+  }
+
+  .tecnologias i {
+    font-size: 1.5rem;
+  }
+
+  /* end about me */
+
+
+  /* projects */
+
+  .projectsContainer {
+    margin-top: 200px;
+    display: none;
+  }
+
+  .projects {
+    gap: 80px;
+    padding: 50px;
+    width: 60%;
+    height: 500px;
+  }
+
+  /* end projects */
+
+  /* contato */
+
+  .contactContainer {
+    margin-top: 300px;
+    display: none;
+    overflow: hidden;
+  }
+
+  /* end contato */
+
+  /* movebar */
+
+  .movePageBar {
+    top: 95%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-95%);
+    width: 300px;
+    height: 50px;
+  }
+
+  /* end movebar */
+}
+
+
+/* !1400px */
+
+@media (max-width: 1400px) {
+  .headerContainer {
+    height: 90px;
+  }
+
+  /* aboutme */
+
+  .aboutMeContainer {
+    padding-top: 100px;
+  }
+
+  .aboutMe {
+    gap: 10px;
+    padding: 50px;
+    width: 70%;
+    height: 50vh;
+    overflow: scroll;
+  }
+
+  .aboutMeText {
+    width: 70%;
+    font-size: 1rem;
+  }
+
+  .aboutMeTitle {
+    padding-bottom: 10px;
+  }
+
+  .aboutMeTextTech {
+    width: 70%;
+    font-size: 1rem;
+    gap: 10px;
+  }
+
+  .tecnologias {
+    gap: 20px;
+  }
+
+  .tecnologias i {
+    font-size: 1rem;
+  }
+
+  /* end about me */
+
+
+  /* projects */
+
+  .projectsContainer {
+    margin-top: 100px;
+    display: none;
+  }
+
+  .projects {
+    gap: 80px;
+    padding: 50px;
+    width: 60%;
+    height: 500px;
+  }
+
+  .githubLink i {
+    padding: 5px;
+    font-size: 1.5rem;
+    transition: .25s all;
+    color: #fff;
+    transition: 0.5s ease-in-out;
+  }
+  
+  .githubLink i:hover {
+    opacity: 50%;
+  }
+  
+  .githubLink {
+    width: 8%;
+    height: 60%;
+    border-radius: 20px;
+    background-color: #222;
+    transition: 0.5s ease-in-out;
+    animation: scale 1s;
+    animation-timing-function: ease-in-out;
+  }
+
+  /* end projects */
+
+  /* contato */
+
+  .contactContainer {
+    margin-top: 200px;
+    display: none;
+    overflow: hidden;
+  }
+
+  /* end contato */
+
+  /* movebar */
+
+  .movePageBar {
+    top: 95%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-95%);
+    width: 300px;
+    height: 50px;
+  }
+
+  /* end movebar */
+}
+
+/* !1200px */
+
+@media (max-width: 1200px) {
+  .headerContainer {
+    height: 90px;
+  }
+
+  /* aboutme */
+
+  .aboutMeContainer {
+    padding-top: 100px;
+  }
+
+  .aboutMe {
+    gap: 10px;
+    padding: 50px;
+    width: 70%;
+    height: 50vh;
+    overflow: scroll;
+  }
+
+  .aboutMeText {
+    width: 70%;
+    height: 60%;
+    font-size: 0.8rem;
+  }
+
+  .aboutMeTitle {
+    padding-bottom: 10px;
+  }
+
+  .aboutMeTextTech {
+    width: 70%;
+    font-size: 1rem;
+    gap: 10px;
+  }
+
+  .tecnologias {
+    gap: 20px;
+  }
+
+  .tecnologias i {
+    font-size: 1rem;
+  }
+
+  /* end about me */
+
+
+  /* projects */
+
+  .projectsContainer {
+    margin-top: 100px;
+    display: none;
+  }
+
+  .projects {
+    gap: 80px;
+    padding: 50px;
+    width: 60%;
+    height: 500px;
+  }
+
+  .projectCard {
+    width: 90%;
+    height: 100%;
+  }
+  
+  /* segunda parte do card */
+  .projectInfo {
+    width: 90%;
+    height: 80%;
+    gap: 20px;
+
+  }
+  
+  .projectTittle h1 {
+    color: #222;
+    transition: 0.5s ease-in-out;
+  }
+  
+  .projectsText {
+    font-size: 0.8rem;
+    width: 90%;
+    height: 100%;
+    overflow: scroll;
+    padding: 15px;
+    text-align: justify;
+    color: #222;
+    transition: 0.5s ease-in-out;
+  }
+
+  .githubLink i {
+    padding: 5px;
+    font-size: 1.5rem;
+    transition: .25s all;
+    color: #fff;
+    transition: 0.5s ease-in-out;
+  }
+  
+  .githubLink i:hover {
+    opacity: 50%;
+  }
+  
+  .githubLink {
+    width: 8%;
+    height: 60%;
+    border-radius: 20px;
+    background-color: #222;
+    transition: 0.5s ease-in-out;
+    animation: scale 1s;
+    animation-timing-function: ease-in-out;
+  }
+
+  /* end projects */
+
+  /* contato */
+
+  .contactContainer {
+    margin-top: 200px;
+    display: none;
+    overflow: hidden;
+  }
+
+  .contact {
+    gap: 20px;
+    padding: 50px;
+    width: 100%;
+    height: 300px;
+  }
+  
+  .contactSocialMedias {
+    gap: 10px;
+  }
+  
+  .contactSocialMedias i {
+    font-size: 4rem;
+    padding: 20px;
+  }
+  
+  .contactSocialMedias i:hover {
+    margin-bottom: 40px;
+  }
+  /* end contato */
+
+  /* movebar */
+
+  .movePageBar {
+    top: 95%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-95%);
+    width: 300px;
+    height: 50px;
+  }
+
+  /* end movebar */
+}
+
+/* !800px */
+
+@media (max-width: 800px) {
+  .headerContainer {
+    height: 70px;
+  }
+
+  /* aboutme */
+
+  .aboutMeContainer {
+    padding-top: 100px;
+  }
+
+  .aboutMe {
+    gap: 10px;
+    padding: 10px;
+    width: 70%;
+    height: 50vh;
+    overflow: scroll;
+  }
+
+  .aboutMeText {
+    width: 70%;
+    height: 50%;
+    font-size: 0.7rem;
+  }
+
+  .aboutMeTitle {
+    padding-bottom: 10px;
+    font-size: 1rem;
+  }
+
+  .aboutMeTextTech {
+    width: 50%;
+    font-size: 0.8rem;
+    gap: 10px;
+  }
+
+  .tecnologias {
+    gap: 20px;
+  }
+
+  .tecnologias i {
+    font-size: 1rem;
+  }
+
+  /* end about me */
+
+
+  /* projects */
+
+  .projectsContainer {
+    margin-top: 100px;
+    display: none;
+  }
+
+  .projects {
+    gap: 80px;
+    padding: 50px;
+    width: 80%;
+    height: 500px;
+  }
+
+  .projectCard {
+    width: 90%;
+    height: 60%;
+  }
+  
+  .first-card {
+    margin-top:500px;
+  }
+  /* segunda parte do card */
+  .projectInfo {
+    width: 90%;
+    height: 80%;
+    gap: 20px;
+
+  }
+  
+  .projectTittle h1 {
+    color: #222;
+    transition: 0.5s ease-in-out;
+    font-size: 0.8rem;
+  }
+  
+  .projectsText {
+    font-size: 0.5rem;
+    width: 90%;
+    height: 100%;
+    overflow: scroll;
+    padding: 15px;
+    text-align: justify;
+    color: #222;
+    transition: 0.5s ease-in-out;
+  }
+
+  .githubLink i {
+    padding: 5px;
+    font-size: 1.5rem;
+    transition: .25s all;
+    color: #fff;
+    transition: 0.5s ease-in-out;
+  }
+  
+  .githubLink i:hover {
+    opacity: 50%;
+  }
+  
+  .githubLink {
+    width: 8%;
+    height: 60%;
+    border-radius: 20px;
+    background-color: #222;
+    transition: 0.5s ease-in-out;
+    animation: scale 1s;
+    animation-timing-function: ease-in-out;
+  }
+
+  /* end projects */
+
+  /* contato */
+
+  .contactContainer {
+    margin-top: 250px;
+    display: none;
+    overflow: hidden;
+  }
+
+  .contact {
+    gap: 20px;
+    padding: 50px;
+    width: 100%;
+    height: 200px;
+  }
+  
+  .contactSocialMedias {
+    gap: 5px;
+  }
+  
+  .contactSocialMedias i {
+    font-size: 2.5rem;
+    padding: 10px;
+  }
+  
+  .contactSocialMedias i:hover {
+    margin-bottom: 40px;
+  }
+  /* end contato */
+
+  /* movebar */
+
+  .movePageBar {
+    top: 95%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-95%);
+    width: 300px;
+    height: 50px;
+  }
+
+  /* end movebar */
+}
+
+/* !500px */
+
+@media (max-width: 500px) {
+  .headerContainer {
+    height: 70px;
+  }
+
+  /* aboutme */
+
+  .aboutMeContainer {
+    padding-top: 100px;
+  }
+
+  .aboutMe {
+    gap: 10px;
+    padding: 10px;
+    width: 70%;
+    height: 50vh;
+    overflow: scroll;
+  }
+
+  .aboutMeText {
+    width: 70%;
+    height: 60%;
+    font-size: 0.6rem;
+  }
+
+  .aboutMeTitle {
+    padding-bottom: 10px;
+    font-size: 0.7rem;
+  }
+
+  .aboutMeTextTech {
+    width: 70%;
+    font-size: 0.6rem;
+    gap: 10px;
+  }
+
+  .tecnologias {
+    gap: 10px;
+  }
+
+  .tecnologias i {
+    font-size: 0.8rem;
+  }
+
+  /* end about me */
+
+
+  /* projects */
+
+  .projectsContainer {
+    margin-top: 150px;
+    display: none;
+  }
+
+  .projects {
+    gap: 50px;
+    padding: 20px;
+    width: 80%;
+    height: 400px;
+  }
+
+  .projectCard {
+    width: 90%;
+    height: 60%;
+  }
+  
+  .first-card {
+    margin-top:500px;
+  }
+  /* segunda parte do card */
+  .projectInfo {
+    width: 90%;
+    height: 80%;
+    gap: 20px;
+
+  }
+  
+  .projectTittle h1 {
+    color: #222;
+    transition: 0.5s ease-in-out;
+    font-size: 0.8rem;
+  }
+  
+  .projectsText {
+    font-size: 0.5rem;
+    width: 90%;
+    height: 100%;
+    overflow: scroll;
+    padding: 15px;
+    text-align: justify;
+    color: #222;
+    transition: 0.5s ease-in-out;
+  }
+
+  .githubLink i {
+    padding: 5px;
+    font-size: 1.5rem;
+    transition: .25s all;
+    color: #fff;
+    transition: 0.5s ease-in-out;
+  }
+  
+  .githubLink i:hover {
+    opacity: 50%;
+  }
+  
+  .githubLink {
+    width: 8%;
+    height: 60%;
+    border-radius: 20px;
+    background-color: #222;
+    transition: 0.5s ease-in-out;
+    animation: scale 1s;
+    animation-timing-function: ease-in-out;
+  }
+
+  /* end projects */
+
+  /* contato */
+
+  .contactContainer {
+    margin-top: 250px;
+    display: none;
+    overflow: hidden;
+  }
+
+  .contact {
+    gap: 20px;
+    padding: 50px;
+    width: 80%;
+    height: 200px;
+  }
+  
+  .contactSocialMedias {
+    gap: 5px;
+  }
+  
+  .contactSocialMedias i {
+    font-size: 2rem;
+    padding: 10px;
+  }
+  
+  .contactSocialMedias i:hover {
+    margin-bottom: 40px;
+  }
+  /* end contato */
+
+  /* movebar */
+
+  .movePageBar {
+    top: 95%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-95%);
+    width: 300px;
+    height: 50px;
+    font-size: 0.9rem;
+  }
+
+  /* end movebar */
+}
+
+/* !400px */
+
+@media (max-width: 400px) {
+  .headerContainer {
+    height: 70px;
+  }
+
+  /* aboutme */
+
+  .aboutMeContainer {
+    padding-top: 100px;
+  }
+
+  .aboutMe {
+    gap: 10px;
+    padding: 10px;
+    width: 70%;
+    height: 50vh;
+    overflow: scroll;
+  }
+
+  .aboutMeText {
+    width: 70%;
+    height: 60%;
+    font-size: 0.5rem;
+  }
+
+  .aboutMeTitle {
+    padding-bottom: 10px;
+    font-size: 0.7rem;
+  }
+
+  .aboutMeTextTech {
+    width: 70%;
+    font-size: 0.6rem;
+    gap: 10px;
+  }
+
+  .tecnologias {
+    gap: 10px;
+  }
+
+  .tecnologias i {
+    font-size: 0.8rem;
+  }
+
+  /* end about me */
+
+
+  /* projects */
+
+  .projectsContainer {
+    margin-top: 100px;
+    display: none;
+  }
+
+  .projects {
+    gap: 30px;
+    padding: 20px;
+    width: 80%;
+    height: 300px;
+  }
+
+  .projectCard {
+    width: 100%;
+    height: 60%;
+  }
+  
+  .first-card {
+    margin-top:300px;
+  }
+  /* segunda parte do card */
+  .projectInfo {
+    width: 90%;
+    height: 80%;
+    gap: 20px;
+
+  }
+  
+  .projectTittle h1 {
+    color: #222;
+    transition: 0.5s ease-in-out;
+    font-size: 0.8rem;
+  }
+  
+  .projectsText {
+    font-size: 0.5rem;
+    width: 90%;
+    height: 100%;
+    overflow: scroll;
+    padding: 15px;
+    text-align: justify;
+    color: #222;
+    transition: 0.5s ease-in-out;
+  }
+
+  .githubLink i {
+    padding: 5px;
+    font-size: 1.5rem;
+    transition: .25s all;
+    color: #fff;
+    transition: 0.5s ease-in-out;
+  }
+  
+  .githubLink i:hover {
+    opacity: 50%;
+  }
+  
+  .githubLink {
+    width: 8%;
+    height: 60%;
+    border-radius: 20px;
+    background-color: #222;
+    transition: 0.5s ease-in-out;
+    animation: scale 1s;
+    animation-timing-function: ease-in-out;
+  }
+
+  /* end projects */
+
+  /* contato */
+
+  .contactContainer {
+    margin-top: 200px;
+    display: none;
+    overflow: hidden;
+  }
+
+  .contact {
+    gap: 20px;
+    padding: 50px;
+    width: 80%;
+    height: 200px;
+  }
+  
+  .contactSocialMedias {
+    gap: 5px;
+  }
+  
+  .contactSocialMedias i {
+    font-size: 2rem;
+    padding: 10px;
+  }
+  
+  .contactSocialMedias i:hover {
+    margin-bottom: 40px;
+  }
+  /* end contato */
+
+  /* movebar */
+
+  .movePageBar {
+    top: 95%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-95%);
+    width: 300px;
+    height: 50px;
+    font-size: 0.9rem;
+  }
+
+  /* end movebar */
+}
